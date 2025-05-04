@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kisan Sathi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div><strong>Kisan Sathi</strong></div>
+    <nav>
+      <a href="#" data-i18n="seedsTitle">Seeds</a>
+      <a href="#" data-i18n="fertilizersTitle">Fertilizers</a>
+      <a href="#" data-i18n="vehiclesTitle">Vehicles</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <label for="language-select" data-i18n="languageSelectLabel">Select Language:</label>
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="te">తెలుగు</option>
+    </select>
+
+    <h2 data-i18n="locationTitle">Select Your District</h2>
+    <select id="location-select">
+      <option value="nalgonda">Nalgonda</option>
+      <option value="karimnagar">Karimnagar</option>
+      <option value="warangal">Warangal</option>
+      <option value="sangareddy">Sangareddy</option>
+    </select>
+
+    <h3 data-i18n="cropTitle">Crop Suggestion</h3>
+    <div>
+      <strong data-i18n="cropName">Suggested Crop:</strong> <span id="crop-name"></span>
+      <div id="crop-steps"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p data-i18n="footerText">© 2025 Kisan Sathi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
